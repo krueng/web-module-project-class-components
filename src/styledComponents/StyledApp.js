@@ -52,7 +52,7 @@ h1 {
   margin: 0 auto;
 }
 .task {
-  background-color: #e64944;
+  background-color: #364943;
   width: 45%;
   text-align: left;
   margin: 4px 0;
@@ -61,7 +61,7 @@ h1 {
 }
 
 .task.completed {
-  background-color: #d17d7c;
+  background-color: #317d7c;
   text-decoration: line-through;
 }
 form {
@@ -70,20 +70,20 @@ form {
   justify-content: flex-end;
 }
 form > input {
-  background-color: #2d2d37;
+  background-color: #3d2d37;
   border: 0;
   padding: 6px 0;
   font-size: 1rem;
   width: 240px;
   outline: 0;
   color: white;
-  border-bottom: 1px solid #e64944;
+  border-bottom: 1px solid #364944;
   margin-right: 8px;
 }
 
 button {
-  background-color: #e64944;
-  border: 1px solid #e64944;
+  background-color: #364944;
+  border: 1px solid #364944;
   color: white;
   font-size: 16px;
   padding: 6px 14px;

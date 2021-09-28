@@ -2,14 +2,14 @@ import React from 'react';
 
 class TodoForm extends React.Component {
     //constructor with state
-    constructor(){
+    constructor() {
         super();
-        this.state ={
+        this.state = {
             input: ''
         }
     }
 
-    handleChanges = evt =>{
+    handleChanges = evt => {
         //update state with each key stroke
         this.setState({
             input: evt.target.value
@@ -17,9 +17,12 @@ class TodoForm extends React.Component {
     };
 
     //class property to submit form
-    handleSubmit = evt =>{
+    handleSubmit = evt => {
         evt.preventDefault();
-        this.props.handleAddTask(this.state.input);
+        this.state.input && this.props.handleAddTask(this.state.input); //if input is empty don't add
+        // this.setState({
+        //     input: ''
+        // });
     }
 
     render() {
